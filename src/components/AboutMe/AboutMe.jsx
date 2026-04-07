@@ -16,7 +16,7 @@ const AboutMe = () => {
 
 
     return (
-        <div className='ml-64'>
+        <div className='ml-64 bg-black py-8'>
 
             {/* Title */}
             <div className='relative pt-5 mb-4 flex justify-center items-center'>
@@ -34,7 +34,7 @@ const AboutMe = () => {
 
                 <div className='md:w-1/2'>
                     <h2 className='pb-6 text-2xl font-bold'>
-                        I'm <span className='text-[#05DF72]'>Afsana Jannat</span>, a Web Developer
+                        I'm <span className='text-purple-400'>Afsana Jannat</span>, a Web Developer
                     </h2>
 
                     <p className='text-gray-300 leading-7'>
@@ -49,7 +49,7 @@ const AboutMe = () => {
                     <hr />
                     <p><span className='font-semibold text-white'>Email:</span> afsanajannat205@gmail.com</p>
                     <hr />
-                    <button className="btn rounded-full p-6 text-xl mb-6 bg-[#056e2a] text-white" onClick={onButtonClick}>
+                    <button className="btn rounded-full p-6 text-xl mb-6 border-purple-400 bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 text-white" onClick={onButtonClick}>
                         Download CV
                     </button>
                 </div>
@@ -69,7 +69,7 @@ const AboutMe = () => {
                             <span>90%</span>
                         </div>
                         <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-[#05DF72] h-2 rounded w-[90%]'></div>
+                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ const AboutMe = () => {
                             <span>80%</span>
                         </div>
                         <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-[#05DF72] h-2 rounded w-[80%]'></div>
+                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[80%]'></div>
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@ const AboutMe = () => {
                             <span>75%</span>
                         </div>
                         <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-[#05DF72] h-2 rounded w-[75%]'></div>
+                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[75%]'></div>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@ const AboutMe = () => {
                             <span>70%</span>
                         </div>
                         <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-[#05DF72] h-2 rounded w-[70%]'></div>
+                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
                         </div>
                     </div>
                 </div>

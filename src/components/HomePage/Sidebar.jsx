@@ -71,8 +71,7 @@ const menuItems = [
     { name: "About Me", path: "/about" },
     { name: "What I Do", path: "/whatido" },
     { name: "Resume", path: "/resume" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Testimonial", path: "/testimonial" },
+    { name: "Project", path: "/project" },
     { name: "Contact", path: "/contact" },
 ];
 
@@ -103,8 +102,8 @@ const Sidebar = () => {
                             key={item.path}
                             onClick={() => handleClick(item.path)}
                             className={`cursor-pointer transition ${active === item.path
-                                ? "text-green-400"
-                                : "text-gray-200 hover:text-green-400"
+                                ? "text-purple-400"
+                                : "text-gray-200 hover:text-purple-400"
                                 }`}
                         >
                             {item.name}
@@ -119,7 +118,7 @@ const Sidebar = () => {
                     href="https://www.linkedin.com/in/afsana-jannat-8484343b6/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-400 transition"
+                    className="hover:text-purple-400 transition"
                 >
                     <FaLinkedin />
                 </a>
@@ -129,7 +128,7 @@ const Sidebar = () => {
                     href="https://github.com/Afsana-Jannat"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-400 transition"
+                    className="hover:text-purple-400 transition"
                 >
                     <FaGithub />
                 </a>
