@@ -14,16 +14,16 @@ const Home = () => {
             <div className="flex">
 
                 {/* Sidebar */}
-                <div className="fixed top-0 left-0 h-screen w-64 z-50">
+                <div className="md:fixed md:top-0 md:left-0 md:h-screen md:w-64 z-50">
                     <Sidebar />
                 </div>
 
                 {/* Main Content */}
-                <div className="ml-64 w-full h-screen overflow-y-scroll scroll-smooth">
+                <div className="md:ml-64 w-full h-screen overflow-y-scroll scroll-smooth">
 
                     {/* Banner Section */}
                     <div
-                        className="min-h-screen flex items-center justify-center bg-cover bg-center"
+                        className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
                         style={{
                             backgroundImage: "url(https://blog.dallascollege.edu/wp-content/uploads/2018/02/girl-working-at-computer-780x390.jpg)",
                         }}
@@ -34,8 +34,8 @@ const Home = () => {
 
                         {/* Content */}
                         <div className="relative text-white text-center px-4">
-                            <h2 className='text-3xl text-purple-400 font-bold'>WELCOME</h2>
-                            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                            <h2 className='md:text-3xl text-2xl text-purple-400 font-bold'>WELCOME</h2>
+                            <h1 className="text-4xl md:text-6xl font-bold mb-4">
                                 I'm{" "}
                                 <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent border-r-2 border-purple-400 pr-2 animate-pulse">
                                     <TypeAnimation
@@ -55,7 +55,7 @@ const Home = () => {
                             </p>
                             <div className="flex justify-center gap-4">
                                 <Link to="/contact">
-                                    <button className="px-6 py-3 rounded-full border border-purple-400 hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300">
+                                    <button className="md:px-6 md:py-3 px-4 py-2 rounded-full border border-purple-400 hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300">
                                         Hire Me
                                     </button>
                                 </Link>
@@ -96,3 +96,5 @@ const Home = () => {
 };
 
 export default Home;
+
+

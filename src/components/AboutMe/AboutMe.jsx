@@ -16,15 +16,15 @@ const AboutMe = () => {
 
 
     return (
-        <div className='ml-64 bg-black py-8'>
+        <div className='md:ml-64 px-4 bg-black md:py-8 py-10'>
 
             {/* Title */}
             <div className='relative pt-5 mb-4 flex justify-center items-center'>
-                <h2 className='text-8xl font-extrabold text-[#161414]'>
+                <h2 className='md:text-8xl text-6xl font-extrabold text-[#161414]'>
                     ABOUT ME
                 </h2>
 
-                <h2 className='absolute text-3xl text-white font-bold'>
+                <h2 className='absolute md:text-4xl text-2xl text-white font-bold'>
                     Know Me More
                 </h2>
             </div>
@@ -49,7 +49,7 @@ const AboutMe = () => {
                     <hr />
                     <p><span className='font-semibold text-white'>Email:</span> afsanajannat205@gmail.com</p>
                     <hr />
-                    <button className="btn rounded-full p-6 text-xl mb-6 border-purple-400 bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 text-white" onClick={onButtonClick}>
+                    <button className="btn rounded-full md:p-6 p-4 text-xl md:mb-6 mb-1 border-purple-400 bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 text-white" onClick={onButtonClick}>
                         Download CV
                     </button>
                 </div>

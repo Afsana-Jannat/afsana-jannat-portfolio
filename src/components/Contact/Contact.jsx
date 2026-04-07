@@ -138,15 +138,15 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-[#0c0c0c] ml-64 text-white py-14 px-4">
+        <section className="bg-[#0c0c0c] md:ml-64 text-white py-14 px-4">
 
             {/* TITLE */}
             <div className="relative flex justify-center items-center mb-16">
-                <h2 className="text-8xl md:text-[120px] font-extrabold text-[#1a1a1a] select-none">
+                <h2 className="md:text-8xl text-6xl md:text-[120px] font-extrabold text-[#1a1a1a] select-none">
                     CONTACT
                 </h2>
 
-                <h2 className="absolute text-3xl md:text-4xl font-bold text-white">
+                <h2 className="absolute text-2xl md:text-4xl font-bold text-white">
                     Get In Touch
                 </h2>
             </div>

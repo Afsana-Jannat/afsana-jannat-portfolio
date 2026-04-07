@@ -9,16 +9,16 @@ import {
 
 const Resume = () => {
     return (
-        <section className="ml-64 bg-[#0f1014] text-white px-10 py-12">
+        <section className="md:ml-64 bg-[#0f1014] text-white px-10 py-12">
 
             {/* ===== TITLE ===== */}
-            <div className="text-center mb-12">
+            <div className="text-center md:mb-12 mb-6">
                 <div className='relative flex justify-center items-center mb-6'>
-                    <h2 className='text-8xl font-extrabold text-[#1f1f1f] tracking-widest'>
+                    <h2 className='md:text-8xl text-6xl font-extrabold text-[#1f1f1f] tracking-widest'>
                         SUMMARY
                     </h2>
 
-                    <h2 className='absolute text-3xl font-bold'>
+                    <h2 className='absolute md:text-5xl text-4xl font-bold'>
                         Resume
                     </h2>
                 </div>
@@ -26,11 +26,11 @@ const Resume = () => {
             </div>
 
             {/* ===== EDUCATION & EXPERIENCE ===== */}
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 md:gap-16 gap-8">
 
                 {/* ===== EDUCATION ===== */}
                 <div>
-                    <h3 className="text-2xl ml-8 font-semibold mb-10 flex items-center gap-3">
+                    <h3 className="text-2xl ml-8 font-semibold md:mb-10 mb-6 flex items-center gap-3">
                         <FaGraduationCap className="text-purple-400 text-3xl" />
                         Education
                     </h3>
@@ -75,13 +75,13 @@ const Resume = () => {
             </div>
 
             {/* ===== SKILLS ===== */}
-            <div className="mt-14">
-                <h3 className="text-3xl font-semibold text-center mb-10 flex justify-center items-center gap-3">
+            <div className="md:mt-14 mt-8">
+                <h3 className="md:text-3xl text-2xl font-semibold text-center mb-10 flex justify-center items-center gap-3">
                     <FaCode className="text-purple-400" />
                     Skills
                 </h3>
 
-                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-2 md:gap-6 gap-4 max-w-4xl mx-auto">
                     {[
                         { name: "HTML / CSS", value: 90 },
                         { name: "JavaScript", value: 80 },

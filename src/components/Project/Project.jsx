@@ -20,9 +20,9 @@ const projects = [
             "A full-stack healthcare solution for medicine booking, doctor appointments, dashboards and secure online payments.",
         tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
         images: [med1, med2, med3],
-        live: "#",
-        githubClient: "#",
-        githubServer: "#",
+        live: "https://medcarehub.vercel.app/",
+        githubClient: "https://github.com/Mohammadarifcoding/MedcareHubClient",
+        githubServer: "https://github.com/Mohammadarifcoding/MedCareHub-server",
     },
     {
         title: "GoDeliver",
@@ -31,9 +31,9 @@ const projects = [
             "A smart parcel delivery platform with admin, rider and user roles, authentication and order tracking.",
         tech: ["React", "Node.js", "MongoDB"],
         images: [del1, del2, del3, del4],
-        live: "#",
-        githubClient: "#",
-        githubServer: "#",
+        live: "https://go-deliver-2408f.web.app/",
+        githubClient: "https://github.com/Afsana-Jannat/go-deliver-client",
+        githubServer: "https://github.com/Afsana-Jannat/go-deliver-server",
     },
 ];
 
@@ -68,7 +68,7 @@ const ImageSlider = ({ images }) => {
 const ProjectSection = ({ project, reverse, isActive, onActive }) => {
     return (
         <motion.section
-            className="relative py-24 px-6 lg:px-20"
+            className="relative md:py-24 py-12 px-6 lg:px-20"
             onViewportEnter={onActive}
             viewport={{ amount: 0.65 }}
         >
@@ -88,7 +88,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                 </div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
                 {/* TEXT */}
                 <motion.div
                     className={reverse ? "lg:order-2 lg:pl-24" : "lg:order-1 lg:pr-24"}
@@ -136,7 +136,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                                 href={project.live}
                                 target="_blank"
                                 rel="noreferrer"
-                                className={`px-5 py-2 rounded-lg bg-purple-500 hover:bg-purple-600 transition font-medium ${isActive ? "shadow-lg" : ""
+                                className={`md:px-5 px-3 md:py-2 py-1 rounded-lg bg-purple-500 hover:bg-purple-600 transition font-medium ${isActive ? "shadow-lg" : ""
                                     }`}
                             >
                                 View Live
@@ -147,7 +147,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                                 href={project.githubClient}
                                 target="_blank"
                                 rel="noreferrer"
-                                className={`px-4 py-2 rounded-lg border border-white/20 hover:border-white/40 transition font-medium ${isActive ? "shadow-lg" : ""
+                                className={`md:px-4 px-2 py-1 md:py-2 rounded-lg border border-white/20 hover:border-white/40 transition font-medium ${isActive ? "shadow-lg" : ""
                                     }`}
                             >
                                 GitHub Client
@@ -158,7 +158,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                                 href={project.githubServer}
                                 target="_blank"
                                 rel="noreferrer"
-                                className={`px-4 py-2 rounded-lg border border-white/20 hover:border-white/40 transition font-medium ${isActive ? "shadow-lg" : ""
+                                className={`md:px-4 px-2 py-1 md:py-2 rounded-lg border border-white/20 hover:border-white/40 transition font-medium ${isActive ? "shadow-lg" : ""
                                     }`}
                             >
                                 GitHub Server
@@ -183,23 +183,23 @@ const Project = () => {
     return (
         <section className="bg-[#0a0a0f] py-14 text-white">
             {/* HEADER */}
-            <div className="text-center ml-64">
+            <div className="text-center md:ml-64">
                 <div className='relative flex justify-center items-center mb-6'>
-                    <h2 className='text-8xl font-extrabold text-[#1f1f1f] tracking-widest'>
+                    <h2 className='md:text-8xl text-6xl font-extrabold text-[#1f1f1f] tracking-widest'>
                         Project
                     </h2>
 
-                    <h2 className='absolute text-3xl font-bold'>
+                    <h2 className='absolute md:text-4xl text-3xl font-bold'>
                         My Work
                     </h2>
                 </div>
-                <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg">
                     Carefully crafted projects focusing on performance, scalability and
                     refined user experience.
                 </p>
             </div>
             {/* TIMELINE WRAPPER */}
-            <div className="relative ml-64">
+            <div className="relative md:ml-64">
                 {/* CENTER LINE */}
                 <div className="hidden lg:block absolute left-1/2 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-purple-500/40 to-transparent" />
 

@@ -3,15 +3,15 @@ import { FaCode, FaPaintBrush, FaLink, FaMobileAlt, FaBug, FaBolt } from "react-
 
 const WhatiDo = () => {
     return (
-        <div className="ml-64 bg-[#0b0a0a] text-white py-20 px-10">
+        <div className="md:ml-64 bg-[#0b0a0a] text-white md:py-20 px-10">
 
             {/* Section Title */}
             <div className='relative flex justify-center items-center mb-6'>
-                <h2 className='text-8xl font-extrabold text-[#1f1f1f] tracking-widest'>
+                <h2 className='md:text-8xl text-6xl font-extrabold text-[#1f1f1f] tracking-widest'>
                     SERVICES
                 </h2>
 
-                <h2 className='absolute text-3xl font-bold'>
+                <h2 className='absolute md:text-3xl text-2xl font-bold'>
                     WHAT I DO?
                 </h2>
             </div>
