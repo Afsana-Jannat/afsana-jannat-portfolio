@@ -30,12 +30,12 @@ const Resume = () => {
 
                 {/* ===== EDUCATION ===== */}
                 <div>
-                    <h3 className="text-2xl ml-8 font-semibold md:mb-10 mb-6 flex items-center gap-3">
+                    <h3 className="text-2xl md:ml-8 lg:ml-44 font-semibold md:mb-10 mb-6 flex items-center gap-3">
                         <FaGraduationCap className="text-purple-400 text-3xl" />
                         Education
                     </h3>
 
-                    <div className="relative ml-8 border-l border-purple-400 pl-8">
+                    <div className="relative md:ml-8 lg:ml-44 border-l border-purple-400 pl-8">
                         <span className="absolute -left-[9px] top-1 w-4 h-4 bg-purple-400 rounded-full"></span>
 
                         <p className="text-purple-400 text-sm">2021 – 2025</p>
