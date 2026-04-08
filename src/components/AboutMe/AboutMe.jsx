@@ -5,7 +5,7 @@ import React from 'react';
 const AboutMe = () => {
 
     const onButtonClick = () => {
-        const pdfUrl = "https://drive.google.com/file/d/1mp6xAa_cQSXGAxKKjVGtzGcF0ha-HT02/view?usp=sharing";
+        const pdfUrl = "https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view?usp=sharing";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "document.pdf"; // specify the filename
