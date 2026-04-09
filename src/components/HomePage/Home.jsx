@@ -7,6 +7,7 @@ import Resume from '../Resume/Resume';
 import Project from '../Project/Project';
 import Contact from '../Contact/Contact';
 import Footer from './Footer';
+import { motion } from "framer-motion";
 
 const Home = () => {
     return (
@@ -22,12 +23,17 @@ const Home = () => {
                 <div className="md:ml-64 w-full h-screen overflow-y-scroll scroll-smooth">
 
                     {/* Banner Section */}
-                    <div
-                        className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+                    <motion.div
+                        className="min-h-screen flex items-center justify-center bg-cover bg-center bg-black relative z-10"
                         style={{
-                            backgroundImage: "url(https://blog.dallascollege.edu/wp-content/uploads/2018/02/girl-working-at-computer-780x390.jpg)",
+                            backgroundImage:
+                                "url(https://blog.dallascollege.edu/wp-content/uploads/2018/02/girl-working-at-computer-780x390.jpg)",
                         }}
+                        initial={{ scale: 1.1 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 1.5 }}
                     >
+
 
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black opacity-60"></div>
@@ -61,7 +67,7 @@ const Home = () => {
                                 </Link>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             {/* jksj */}
@@ -91,10 +97,9 @@ const Home = () => {
                     <Footer></Footer>
                 </section>
             </div>
-        </div>
+        </div >
     );
 };
 
 export default Home;
-
 

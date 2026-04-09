@@ -1,6 +1,165 @@
 
 
+// import React from 'react';
+
+// const AboutMe = () => {
+
+//     const onButtonClick = () => {
+//         const pdfUrl = "https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view?usp=sharing";
+//         const link = document.createElement("a");
+//         link.href = pdfUrl;
+//         link.download = "document.pdf"; // specify the filename
+//         document.body.appendChild(link);
+//         link.click();
+//         document.body.removeChild(link);
+//     };
+
+
+//     return (
+//         <div className='md:ml-64 px-4 bg-black md:py-8 py-10'>
+
+//             {/* Title */}
+//             <div className='relative pt-5 mb-4 flex justify-center items-center'>
+//                 <h2 className='md:text-8xl text-6xl font-extrabold text-[#161414]'>
+//                     ABOUT ME
+//                 </h2>
+
+//                 <h2 className='absolute md:text-4xl text-2xl text-white font-bold'>
+//                     Know Me More
+//                 </h2>
+//             </div>
+
+//             {/* Intro Section */}
+//             <div className='flex flex-col md:flex-row justify-between gap-16 p-12'>
+
+//                 <div className='md:w-1/2'>
+//                     <h2 className='pb-6 text-2xl font-bold'>
+//                         I'm <span className='text-purple-400'>Afsana Jannat</span>, a Web Developer
+//                     </h2>
+
+//                     <p className='text-gray-300 leading-7'>
+//                         I am a passionate web developer focused on building modern,
+//                         responsive, and user-friendly web applications. I enjoy turning
+//                         ideas into real-world products using clean and efficient code.
+//                     </p>
+//                 </div>
+
+//                 <div className='md:w-1/2 space-y-4 text-gray-300'>
+//                     <p><span className='font-semibold text-white'>Name:</span> Afsana Jannat</p>
+//                     <hr />
+//                     <p><span className='font-semibold text-white'>Email:</span> afsanajannat205@gmail.com</p>
+//                     <hr />
+//                     <button className="btn rounded-full md:p-6 p-4 text-xl md:mb-6 mb-1 border-purple-400 bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 text-white" onClick={onButtonClick}>
+//                         Download CV
+//                     </button>
+//                 </div>
+//             </div>
+
+//             {/* Skills + Education + Projects */}
+//             <div className='grid md:grid-cols-3 mt-6 gap-10 px-12 pb-16'>
+
+//                 {/* Skills */}
+//                 <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+//                     <h3 className='text-xl font-bold text-white mb-6'>Skills</h3>
+
+//                     {/* Skill Item */}
+//                     <div className='mb-4'>
+//                         <div className='flex justify-between text-sm text-gray-300'>
+//                             <span>HTML / CSS</span>
+//                             <span>90%</span>
+//                         </div>
+//                         <div className='w-full bg-gray-700 h-2 rounded'>
+//                             <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
+//                         </div>
+//                     </div>
+
+//                     <div className='mb-4'>
+//                         <div className='flex justify-between text-sm text-gray-300'>
+//                             <span>JavaScript</span>
+//                             <span>80%</span>
+//                         </div>
+//                         <div className='w-full bg-gray-700 h-2 rounded'>
+//                             <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[80%]'></div>
+//                         </div>
+//                     </div>
+
+//                     <div className='mb-4'>
+//                         <div className='flex justify-between text-sm text-gray-300'>
+//                             <span>React</span>
+//                             <span>75%</span>
+//                         </div>
+//                         <div className='w-full bg-gray-700 h-2 rounded'>
+//                             <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[75%]'></div>
+//                         </div>
+//                     </div>
+
+//                     <div>
+//                         <div className='flex justify-between text-sm text-gray-300'>
+//                             <span>Git & GitHub</span>
+//                             <span>70%</span>
+//                         </div>
+//                         <div className='w-full bg-gray-700 h-2 rounded'>
+//                             <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
+//                         </div>
+//                     </div>
+//                 </div>
+
+//                 {/* Projects */}
+//                 <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+//                     <h3 className='text-xl font-bold text-white mb-6'>Projects</h3>
+
+//                     <div className='space-y-4 text-gray-300'>
+//                         <div>
+//                             <h4 className='text-white font-semibold'>Portfolio Website</h4>
+//                             <p className='text-sm'>Personal responsive portfolio using React & Tailwind.</p>
+//                         </div>
+
+//                         <div>
+//                             <h4 className='text-white font-semibold'>GoDeliver</h4>
+//                             <p className='text-sm'>
+//                                 Delivery management web application with order tracking, user dashboard, and real-time updates.
+//                             </p>
+//                         </div>
+
+//                         <div className='space-y-4 text-gray-300'>
+
+
+//                             <div>
+//                                 <h4 className='text-white font-semibold'>Try It Together</h4>
+//                                 <p className='text-sm'>Collaborative shopping experience with real-time features.</p>
+//                             </div>
+
+//                         </div>
+//                     </div>
+//                 </div>
+
+//                 {/* Education */}
+//                 <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+//                     <h3 className='text-xl font-bold text-white mb-6'>Education</h3>
+
+//                     <div className='space-y-4 text-gray-300'>
+//                         <div>
+//                             <h4 className='text-white font-semibold'>BSc in Software Engineering</h4>
+//                             <p className='text-sm'>Daffodil International University</p>
+//                         </div>
+
+//                         <div>
+//                             <h4 className='text-white font-semibold'>Web Development</h4>
+//                             <p className='text-sm'>Self Learning & Online Courses</p>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+
+//         </div>
+//     );
+// };
+
+// export default AboutMe;
+
+
 import React from 'react';
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
 
@@ -8,18 +167,41 @@ const AboutMe = () => {
         const pdfUrl = "https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view?usp=sharing";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "document.pdf"; // specify the filename
+        link.download = "Afsana_Jannat_CV.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
+    // Animation Variants
+    const container = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 60 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+    };
 
     return (
-        <div className='md:ml-64 px-4 bg-black md:py-8 py-10'>
+        <motion.div
+            className='md:ml-64 px-4 bg-black md:py-8 py-10'
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+        >
 
             {/* Title */}
-            <div className='relative pt-5 mb-4 flex justify-center items-center'>
+            <motion.div
+                className='relative pt-5 mb-4 flex justify-center items-center'
+                variants={fadeUp}
+            >
                 <h2 className='md:text-8xl text-6xl font-extrabold text-[#161414]'>
                     ABOUT ME
                 </h2>
@@ -27,10 +209,13 @@ const AboutMe = () => {
                 <h2 className='absolute md:text-4xl text-2xl text-white font-bold'>
                     Know Me More
                 </h2>
-            </div>
+            </motion.div>
 
             {/* Intro Section */}
-            <div className='flex flex-col md:flex-row justify-between gap-16 p-12'>
+            <motion.div
+                className='flex flex-col md:flex-row justify-between gap-16 p-12'
+                variants={fadeUp}
+            >
 
                 <div className='md:w-1/2'>
                     <h2 className='pb-6 text-2xl font-bold'>
@@ -49,92 +234,89 @@ const AboutMe = () => {
                     <hr />
                     <p><span className='font-semibold text-white'>Email:</span> afsanajannat205@gmail.com</p>
                     <hr />
-                    <button className="btn rounded-full md:p-6 p-4 text-xl md:mb-6 mb-1 border-purple-400 bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 text-white" onClick={onButtonClick}>
-                        Download CV
-                    </button>
-                </div>
-            </div>
 
-            {/* Skills + Education + Projects */}
-            <div className='grid md:grid-cols-3 mt-6 gap-10 px-12 pb-16'>
+                    <motion.button
+                        whileHover={{ scale: 1.08, boxShadow: "0px 0px 20px rgba(168,85,247,0.8)" }}
+                        whileTap={{ scale: 0.95 }}
+                        className="btn rounded-full md:p-6 p-4 text-xl md:mb-6 mb-1 border-purple-400 bg-purple-500 text-white transition duration-300"
+                        onClick={onButtonClick}
+                    >
+                        Download CV
+                    </motion.button>
+                </div>
+            </motion.div>
+
+            {/* Cards Section */}
+            <motion.div
+                className='grid md:grid-cols-3 mt-6 gap-10 px-12 pb-16'
+                variants={container}
+            >
 
                 {/* Skills */}
-                <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{ y: -10 }}
+                    className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 transition duration-300'
+                >
                     <h3 className='text-xl font-bold text-white mb-6'>Skills</h3>
 
-                    {/* Skill Item */}
-                    <div className='mb-4'>
-                        <div className='flex justify-between text-sm text-gray-300'>
-                            <span>HTML / CSS</span>
-                            <span>90%</span>
+                    {[
+                        { name: "HTML / CSS", value: "90%" },
+                        { name: "JavaScript", value: "80%" },
+                        { name: "React", value: "75%" },
+                        { name: "Git & GitHub", value: "70%" }
+                    ].map((skill, i) => (
+                        <div key={i} className='mb-4'>
+                            <div className='flex justify-between text-sm text-gray-300'>
+                                <span>{skill.name}</span>
+                                <span>{skill.value}</span>
+                            </div>
+                            <div className='w-full bg-gray-700 h-2 rounded'>
+                                <div
+                                    className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded'
+                                    style={{ width: skill.value }}
+                                ></div>
+                            </div>
                         </div>
-                        <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
-                        </div>
-                    </div>
-
-                    <div className='mb-4'>
-                        <div className='flex justify-between text-sm text-gray-300'>
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[80%]'></div>
-                        </div>
-                    </div>
-
-                    <div className='mb-4'>
-                        <div className='flex justify-between text-sm text-gray-300'>
-                            <span>React</span>
-                            <span>75%</span>
-                        </div>
-                        <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[75%]'></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div className='flex justify-between text-sm text-gray-300'>
-                            <span>Git & GitHub</span>
-                            <span>70%</span>
-                        </div>
-                        <div className='w-full bg-gray-700 h-2 rounded'>
-                            <div className='bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded w-[90%]'></div>
-                        </div>
-                    </div>
-                </div>
+                    ))}
+                </motion.div>
 
                 {/* Projects */}
-                <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{ y: -10 }}
+                    className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 transition duration-300'
+                >
                     <h3 className='text-xl font-bold text-white mb-6'>Projects</h3>
 
                     <div className='space-y-4 text-gray-300'>
                         <div>
                             <h4 className='text-white font-semibold'>Portfolio Website</h4>
-                            <p className='text-sm'>Personal responsive portfolio using React & Tailwind.</p>
+                            <p className='text-sm'>Responsive portfolio built with React & Tailwind.</p>
                         </div>
 
                         <div>
                             <h4 className='text-white font-semibold'>GoDeliver</h4>
                             <p className='text-sm'>
-                                Delivery management web application with order tracking, user dashboard, and real-time updates.
+                                Delivery management system with tracking & dashboard.
                             </p>
                         </div>
 
-                        <div className='space-y-4 text-gray-300'>
-
-
-                            <div>
-                                <h4 className='text-white font-semibold'>Try It Together</h4>
-                                <p className='text-sm'>Collaborative shopping experience with real-time features.</p>
-                            </div>
-
+                        <div>
+                            <h4 className='text-white font-semibold'>Try It Together</h4>
+                            <p className='text-sm'>
+                                Real-time collaborative shopping platform.
+                            </p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Education */}
-                <div className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg'>
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{ y: -10 }}
+                    className='bg-[#1c1c1c] p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 transition duration-300'
+                >
                     <h3 className='text-xl font-bold text-white mb-6'>Education</h3>
 
                     <div className='space-y-4 text-gray-300'>
@@ -148,10 +330,11 @@ const AboutMe = () => {
                             <p className='text-sm'>Self Learning & Online Courses</p>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
 
-        </div>
+            </motion.div>
+
+        </motion.div>
     );
 };
 
