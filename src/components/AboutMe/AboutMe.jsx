@@ -76,7 +76,7 @@ const AboutMe = () => {
 
                         <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
                             <span className="font-semibold text-white">Email</span>
-                            <span>afsanajannat205@gmail.com</span>
+                            <span className='break-all text-left'>afsanajannat205@gmail.com</span>
                         </div>
 
                         <hr className="border-gray-700" />
