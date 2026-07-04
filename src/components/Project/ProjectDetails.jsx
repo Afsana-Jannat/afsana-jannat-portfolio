@@ -116,7 +116,7 @@ const ProjectDetails = () => {
     }
 
     return (
-        <section className="md:ml-70 px-6 lg:px-20 bg-black md:py-8 py-10">
+        <section className="md:ml-64 bg-black px-12 lg:px-24 pt-24 pb-10 md:pt-8 md:pb-8">
             {/* BACK BUTTON */}
             <Link
                 to="/project"

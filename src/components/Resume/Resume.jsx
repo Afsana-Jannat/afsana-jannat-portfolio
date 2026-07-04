@@ -128,7 +128,7 @@ const Resume = () => {
             {/* ===== DOWNLOAD RESUME ===== */}
             <div className="flex justify-center mt-16">
                 <a
-                    href="https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view?usp=sharing"
+                    href="https://drive.google.com/uc?export=download&id=15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-5 sm:px-7 py-3 rounded-full border border-purple-400 hover:bg-purple-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.7)] transition font-semibold"

@@ -73,7 +73,7 @@ const Home = () => {
                             {/* Buttons */}
                             <div className="flex flex-wrap justify-center gap-4 mt-8">
                                 <a
-                                    href="https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view"
+                                    href="https://drive.google.com/uc?export=download&id=15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-2 px-5 py-2 rounded-full border border-purple-400 hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300"

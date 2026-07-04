@@ -63,23 +63,23 @@ ${open ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
                     </p>
                 </div>
 
-                <nav className="mt-10 w-full pt-10 text-center">
-                    <ul className="space-y-2 font-semibold w-full px-4">
+                <nav className="mt-10 w-full pt-10 px-8">
+                    <ul className="space-y-2 font-semibold w-full px-8">
                         {menuItems.map((item) => (
                             <li
                                 key={item.path}
                                 onClick={() => handleClick(item.path)}
-                                className={`relative py-3 pl-10 rounded-lg cursor-pointer transition-all duration-300
-            ${location.pathname === item.path
-                                        ? "bg-gray-800 text-purple-400"
+                                className={`relative flex items-center py-3 pl-10 rounded-lg cursor-pointer transition-all duration-300
+    ${location.pathname === item.path
+                                        ? " text-purple-400"
                                         : "text-gray-300 hover:bg-gray-800 hover:text-purple-400"
                                     }`}
                             >
                                 {location.pathname === item.path && (
-                                    <span className="absolute left-4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-purple-500"></span>
+                                    <span className="absolute left-4 w-2 h-2 rounded-full bg-purple-500"></span>
                                 )}
 
-                                {item.name}
+                                <span>{item.name}</span>
                             </li>
                         ))}
                     </ul>

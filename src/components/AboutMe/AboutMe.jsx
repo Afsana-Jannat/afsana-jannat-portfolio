@@ -4,17 +4,6 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
 
-    // const onButtonClick = () => {
-    //     const pdfUrl = "https://drive.google.com/file/d/15ldZBUDi4iSxBYv4yzLiqfWTvVRKmxnh/view?usp=sharing";
-    //     const link = document.createElement("a");
-    //     link.href = pdfUrl;
-    //     link.download = "Afsana_Jannat_Resume.pdf";
-    //     document.body.appendChild(link);
-    //     link.click();
-    //     document.body.removeChild(link);
-    // };
-
-    // Animation Variants
     const container = {
         hidden: {},
         show: {
@@ -74,25 +63,6 @@ const AboutMe = () => {
                     </p>
                 </div>
 
-                {/* <div className='md:w-1/2 space-y-4 text-gray-300'>
-                    <p><span className='font-semibold text-white'>Name:</span> Afsana Jannat</p>
-                    <hr />
-                    <p><span className='font-semibold text-white'>Email:</span> afsanajannat205@gmail.com</p>
-                    <hr />
-                    <p><span className='font-semibold text-white'>Phone:</span> 01890545497</p>
-                    <hr />
-                    <p><span className='font-semibold text-white'>Location:</span> Barishal, Bangladesh</p>
-                    <hr />
-
-                    <motion.button
-                        whileHover={{ scale: 1.08, boxShadow: "0px 0px 20px rgba(168,85,247,0.8)" }}
-                        whileTap={{ scale: 0.95 }}
-                        className="btn rounded-full md:p-6 p-4 text-xl md:mb-6 mb-1 border-purple-400 bg-purple-500 text-white transition duration-300"
-                        onClick={onButtonClick}
-                    >
-                        Download Resume
-                    </motion.button>
-                </div> */}
                 <div className="lg:w-2/5 w-full bg-[#181818] rounded-2xl p-8 border border-gray-800 shadow-lg">
 
                     <div className="space-y-5 text-gray-300">
