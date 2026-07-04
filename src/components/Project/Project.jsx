@@ -162,7 +162,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                 </div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
                 {/* TEXT */}
                 <motion.div
                     className={reverse ? "lg:order-2 lg:pl-20" : "lg:order-1 lg:pr-20"}
@@ -179,7 +179,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                         {project.title}
                     </h2>
 
-                    <p className="text-gray-400 leading-relaxed mb-6 max-w-xl">
+                    <p className="text-gray-400 leading-relaxed mb-6 max-w-xl text-sm md:text-base">
                         {project.desc}
                     </p>
 
@@ -195,7 +195,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                     </div>
 
                     {/* BUTTONS */}
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-4">
                         {project.live && (
                             <a
                                 href={project.live}
@@ -206,7 +206,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                                 View Live
                             </a>
                         )}
-                        {project.githubClient && (
+                        {/* {project.githubClient && (
                             <a
                                 href={project.githubClient}
                                 target="_blank"
@@ -225,7 +225,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                             >
                                 GitHub Server
                             </a>
-                        )}
+                        )} */}
 
                         <Link
                             to={`/projects/${project.id}`}
