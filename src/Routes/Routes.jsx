@@ -7,6 +7,7 @@ import Resume from "../components/Resume/Resume";
 import Project from "../components/Project/Project";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/HomePage/Footer";
+import ProjectDetails from "../components/Project/ProjectDetails";
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                index: "true",
+                index: true,
                 element: <Home />,
             },
             {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
                 element: <Project></Project>
             },
             {
+                path: "projects/:id",
+                element: <ProjectDetails />
+            },
+            {
                 path: "contact",
                 element: <Contact></Contact>
             },
@@ -44,3 +49,4 @@ export const router = createBrowserRouter([
         ],
     },
 ]);
+
