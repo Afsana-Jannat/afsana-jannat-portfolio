@@ -206,26 +206,7 @@ const ProjectSection = ({ project, reverse, isActive, onActive }) => {
                                 View Live
                             </a>
                         )}
-                        {/* {project.githubClient && (
-                            <a
-                                href={project.githubClient}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="px-4 py-2 rounded-lg border border-white/20 hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 font-medium"
-                            >
-                                GitHub Client
-                            </a>
-                        )}
-                        {project.githubServer && (
-                            <a
-                                href={project.githubServer}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="px-4 py-2 rounded-lg border border-white/20 hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.7)] transition duration-300 transition font-medium"
-                            >
-                                GitHub Server
-                            </a>
-                        )} */}
+
 
                         <Link
                             to={`/projects/${project.id}`}
